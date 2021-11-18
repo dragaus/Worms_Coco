@@ -26,4 +26,10 @@ public class MyNetworkManager : NetworkManager
 
         Debug.Log($"Join player {numPlayers} the server!!!!");
     }
+
+    public override void ServerChangeScene(string newSceneName)
+    {
+        base.ServerChangeScene(newSceneName);
+        Debug.Log(newSceneName);
+    }
 }
